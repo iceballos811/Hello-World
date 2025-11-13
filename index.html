@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Tu próxima aventura te espera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #008CBA;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #008CBA;
+        }
+        .destinos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #008CBA;
+            margin-top: 10px;
+        }
+        .cta {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin-top: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .cta:hover {
+            background-color: #006F8E;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TravelGo</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tu próxima aventura comienza aquí</h1>
+        <p>Explora el mundo con <strong>TravelGo</strong>. Encuentra los mejores destinos, vive experiencias únicas y crea recuerdos inolvidables con nuestros planes de viaje personalizados.</p>
+
+        <button class="cta">Descubre destinos</button>
+
+        <section class="destinos">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Playa paradisíaca">
+                <h3>Caribe</h3>
+                <p>Relájate en playas de arena blanca y aguas cristalinas en las islas más hermosas del Caribe.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090" alt="Montañas nevadas">
+                <h3>Suiza</h3>
+                <p>Disfruta de paisajes alpinos impresionantes y experiencias únicas en el corazón de Europa.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Ciudad asiática de noche">
+                <h3>Tokio</h3>
+                <p>Vive la energía de una de las ciudades más vibrantes y tecnológicas del mundo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 TravelGo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
